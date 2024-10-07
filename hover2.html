@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Hover</title>
+    <style>
+        body{
+            height:100Vh;
+            display:flex;
+            align-items:center;
+            justify-content:space-around;
+            background-color: purple;
+        }
+        button{
+            padding:20px 10px;
+            font-size:30px; 
+           cursor: pointer;
+        }
+        .box{
+            width:200px;
+            height:200px;
+            border:5px solid grey;
+            background-color:yellowgreen;
+            transition:0.3s all;
+        }
+        .btn:hover ~ .box{
+            background-color:lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Hover</button>
+<div class="box"></div>
+
+ 
+</body>
+</html>
